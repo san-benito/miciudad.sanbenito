@@ -19,6 +19,9 @@
       <!-- Left Side Of Navbar -->
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
+          <a href="https://sanbenito.gob.ar" class="nav-link"><i class="fa fa-globe"></i> Sitio Web</a>
+        </li>
+        <li class="nav-item">
           <a href="{{ route('objectives') }}" class="nav-link"><i class="fas fa-fw fa-bullseye"></i> Objetivos</a>
         </li>
         <li class="nav-item">
