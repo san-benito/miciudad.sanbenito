@@ -1,5 +1,5 @@
 <!-- Primary Meta Tags -->
-<title>{{app_setting('app_social_title',config('app.name', 'Laravel'))}}</title>
+<title>{{app_setting('app_social_title', config('app.name', 'Laravel'))}}</title>
 <meta name="title" content="{{app_setting('app_social_title',config('app.name', 'Laravel'))}}">
 <meta name="description" content="{{app_setting('app_social_description')}}">
 

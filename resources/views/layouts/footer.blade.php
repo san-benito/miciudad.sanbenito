@@ -24,6 +24,7 @@
     </div>
   </div>
 </div>
+{{--
 <div class="bg-light">
   <div id="post-footer" class="container">
     <div class="row py-3 text-center">
@@ -39,3 +40,4 @@
     </div>
   </div>
 </div>
+--}}
