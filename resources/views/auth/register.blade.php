@@ -12,6 +12,8 @@
 				<img src="{{asset(app_setting('app_logo_white','img/default-logo-white.svg'))}}" class="img-fluid logo-home-smaller mb-5 mt-2"
 					alt="{{ config('app.name', 'Laravel') }}">
 			</div>
+
+      {{--
 			@if ($errors->any())
 			<div class="alert alert-danger">
 				<ul class="mb-0">
@@ -130,7 +132,14 @@
 					</form>
 				</div>
 			</div>
+			--}}
 		</div>
 	</div>
+
+  <div>
+    <p class="alert text-center is-300 is-size-5">
+      Acceso disponible unicamente para Ciudadanos de San Benito.
+    </p>
+  </div>
 </div>
 @endsection

@@ -2,7 +2,7 @@
   $countUnreadNotifications = 0;
   if(Auth::user()){
     $countUnreadNotifications = Auth::user()->unreadNotifications->count();
-  } 
+  }
 @endphp
 
 <nav class="navbar navbar-expand-md navbar-dark p-2 bg-primary">
@@ -42,11 +42,14 @@
         <li class="nav-item">
          <a class="nav-link" href="{{ route('login') }}"><i class="fas fa-sign-in-alt"></i>&nbsp;{{ __('Login') }}</a>
         </li>
+
+        {{--
         @if (Route::has('register'))
         <li class="nav-item">
           <a class="nav-link" href="{{ route('register') }}"><i class="fas fa-user-plus"></i>&nbsp;{{ __('Register') }}</a>
         </li>
         @endif
+        --}}
         @else
         @if( $countUnreadNotifications > 0 )
         <li class="nav-item">
