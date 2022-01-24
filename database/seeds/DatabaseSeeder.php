@@ -16,7 +16,7 @@ class DatabaseSeeder extends Seeder
     $this->call(RoleTableSeeder::class);
     //$this->call(DefaultDemoSeeder::class);
 
-    $admin = new User();
+    $admin = new \App\User();
     $admin->name = 'Admin';
     $admin->surname = 'Participes';
     $admin->email = 'admin@admin.com';
@@ -24,8 +24,8 @@ class DatabaseSeeder extends Seeder
     $admin->password = Hash::make('participes');
     $admin->remember_token = Str::random(10);
     $admin->save();
-    $admin->roles()->attach(Role::where('name', 'user')->first());
-    $admin->roles()->attach(Role::where('name', 'admin')->first());
+    $admin->roles()->attach(\App\Role::where('name', 'user')->first());
+    $admin->roles()->attach(\App\Role::where('name', 'admin')->first());
     $admin->save();
   }
 }
